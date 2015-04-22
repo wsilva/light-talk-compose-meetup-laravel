@@ -13,6 +13,9 @@
 
 Route::get('/', 'WelcomeController@index');
 
+Route::get('/meetup', 'MeetupController@meetup');
+Route::get('/meetup/curtir', 'MeetupController@curtir');
+
 Route::get('home', 'HomeController@index');
 
 Route::controllers([
