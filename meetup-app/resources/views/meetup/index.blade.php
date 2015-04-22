@@ -10,6 +10,9 @@
     .server
     {
         color: #CCC;
+        border-top: 1px solid #CCC;
+        margin-top: 20px;
+        padding-top: 10px;
     }
     </style>
     <meta charset="UTF-8">
@@ -25,10 +28,10 @@
             <div class="likebutton">
                 {{ $curtidas }} curtida(s)
                 <br>
-                <a href="#">Curtir</a>
+                <a href="/meetup/curtir">Curtir</a>
             </div>
             <div class="server">
-                Servidor: {{ $container }}
+                Servidor: {{ $container }} <br>IP: {{ $serverip }})
             </div>
         </div>
     </div>

@@ -15,13 +15,14 @@ class MeetupController extends Controller
 		$curtidas = Cache::get('curtidas', 0);
 		return view('meetup.index')
 			->with('curtidas', $curtidas)
-			->with('container', gethostname());
+			->with('container', gethostname())
+			->with('serverip', $_SERVER['SERVER_ADDR']);
 	}
 
 	public function curtir()
 	{
-		// to be implemented
-		return "not implemented yet";
+		Cache::increment('curtidas');
+		return redirect('meetup')->with('message', 'Curtida Ok!');
 	}
 
 }
