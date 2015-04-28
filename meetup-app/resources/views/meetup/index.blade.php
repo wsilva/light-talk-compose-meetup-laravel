@@ -22,7 +22,7 @@
     <div class="container">
         <div class="content">
             <div class="title">
-            <h1>Relaxa, tamo em casa...</h1>
+            <h1>Relaxa papai, final de semana é nóis...</h1>
             </div>
             <div class="foto"><img src="/images/helena.jpg" alt=""></div>
             <div class="likebutton">
